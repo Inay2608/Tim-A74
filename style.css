@@ -1,0 +1,295 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.screen-dalam{
+    width: 1000px;
+    margin: auto;
+}
+.full-screen{
+    width: 100%;
+}   
+nav{
+    z-index: 100;
+    color:#fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+nav.nama-putih{
+    background-color: #ffffff;
+}
+nav .logo{
+    float: left;
+    text-align: center;
+    position: relative;
+    line-height: 55px;
+}
+nav .logo img{
+    vertical-align: middle;
+    width: 150px;
+}
+nav .menu{
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+nav .menu ul{
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+}
+nav .menu ul li{
+    list-style-type: none;
+    line-height: 60px;
+    float: left;
+}
+nav ul li a{
+    color: #fff;
+    padding: 0px 16px 0px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/*Style Header*/
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+header video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+    width: 100%;
+}
+header .intro{
+    z-index: 100;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+header .intro h2{
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+.button{
+    background-color: rgb(67, 148, 51);
+    height: 40px;
+    line-height: 42px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 40px 0px 40px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+header .overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 60%;
+    z-index: -1;
+}
+.button-menu{
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.button-menu .garis{
+    height: 4px;
+    background-color: #ffff;
+}
+section{
+    padding: 50px 0px 50px 0px;
+}
+section h2{
+    font-size: 40px;
+}
+section h2::after{
+    content: "";
+    border-bottom: 5px solid rgb(29, 78, 170);
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}
+#About{
+    text-align: center;
+}
+section p.ringkasan{
+    font-style: italic;
+    font-size: 15px;
+}
+section .konten{
+    font-style: normal;
+}
+nav.nama-putih{
+    background-color: #fff;
+}
+nav.nama-putih .button-menu .garis{
+    background-color: #333;
+}
+nav.nama-putih ul li a{
+    color: #333;
+}
+nav .logo img.nama-hitam{
+    display: none;
+}
+section#Gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0px 10px 0px;
+}
+section#Gallery div{
+    padding: 10px;
+}
+section#Gallery div img{
+    height: 100px;
+    border-radius: 5px;
+}
+section#Gallery div img:hover{
+    transition: all 0.3 ease-in-out;
+    transform: scale(1.1);
+}
+section.quotes{
+    background-color: rgb(2, 100, 100);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(247, 247, 247);
+    padding: 100px;
+}
+#Blog{
+    text-align: center;
+}
+.Blog .area{
+    width: 47%;
+    box-shadow: 0px -10px 30px #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Blog div.area div{
+    width: 50%;
+}
+.Blog .area .gambar{
+    border-radius: 5px 0px 0px 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+.Blog .area .text article{
+    padding: 40px;
+    font-size: small;
+}
+.Blog .area .text article h4{
+    margin: 0px;
+}
+.Blog .area .text article a{
+    transition: color 0.5s ease;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+}
+.Blog .area .text article a:hover{
+    color: cadetblue;
+}
+footer{
+    padding: 50px 0px 50px 0px;
+    background-color: rgb(2, 100, 100);
+    color: #fff;
+}
+footer .screen-dalam{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .screen-dalam div{
+    width: 30%;
+}
+footer .screen-dalam h3{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+footer .screen-dalam .copyright{
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 30px;
+    border-top: 1px solid rgb(2, 100, 100);
+    text-align: center;
+}
+@media screen and (max-width: 991.98px){
+    .screen-dalam{
+        width: 90%;
+    }
+    nav .menu ul{
+        display: none;
+        margin-top: 60px;
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+    }
+    nav .menu ul li{
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        background-color: rgb(47, 48, 51);
+        line-height: 40px;
+    }
+    nav .menu ul li a{
+        color: rgb(189, 214, 209);
+    }
+    .button-menu{
+        display: flex;
+    }
+    .Blog .area{
+        display: block;
+    }
+    .Blog div.area div{
+        width: 100%;
+    }
+    .Blog .area .gambar{
+        border-radius: 5px 5px 0px 0px;
+        height: 200px;
+    }
+}
