@@ -214,6 +214,10 @@ section.quotes{
     background-size: cover;
     background-position: center;
     height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+    
 }
 .Blog .area .text article{
     padding: 40px;
