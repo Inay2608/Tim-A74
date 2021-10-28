@@ -174,10 +174,17 @@ section#Gallery{
 }
 section#Gallery div{
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
 }
 section#Gallery div img{
     height: 100px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+    
 }
 section#Gallery div img:hover{
     transition: all 0.3 ease-in-out;
